@@ -101,7 +101,7 @@
             /* con esto se puede replicar lo de Juan Pablo */
 
             header{
-                background:linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url(cositas/bosque_borneo.jpeg);
+                background:linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url(imgs/bosque_borneo.jpeg);
                 background-size: cover;
                 background-position: center -250px;
                 background-repeat: no-repeat;
@@ -112,7 +112,7 @@
         <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
         <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
 
-        <title>REPASO DANDO UN PASO</title>
+        <title>Orangután de Borneo / Infografía Digital UC</title>
     </head>
     <body>
         <!--ESTE ES EL ENCABEZADO-->
@@ -120,21 +120,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-11 col-lg-10 col-xl-9 mx-auto">
-                        <img src="cositas/Orangutan_002.png" class="w-100" />
+                        <img src="imgs/Orangutan_002.png" class="w-100" />
                     </div>
                 </div>
             </div>
-            <div class="container bg-white">
+            <div class="container bg-white rounded-2">
             <div class="row">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h2 class="text-center fst-italic mt-5"><span class="px-2 py-1">Nombre científico</span></h2>
+                    <h2 class="text-center fst-italic mt-5"><span class="px-2 py-1 rounded-2">Pongo pygmaeus</span></h2>
 
-                    <h1 class="text-center py-3">Nombre común</h1>
+                    <h1 class="text-center py-3">Orangután de Borneo</h1>
 
                     <p class="lead">En este párrafo, de clase lead, tenemos que ser capaces de conectar lo que se ve arriba (el animal en su hábitat) y lo que se ve abajo (la gráfica del estado de conservación). Es recomendable que sea corto como un tweet (máximo de 280 caracteres, como los caracteres del párrafo).</p>
 
+        <!--ESTE ES EL NIVEL DE AMENAZA-->
+
                     <div class="row">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 my-5 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 my-5 mx-auto border">
                             <style type="text/css">
                                 line,
                                 path {
@@ -203,133 +205,107 @@
             </div>
         </header>
 
-<!-- Esta es una sección de prueba -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-9 mx-auto">
-            <!--este es un grupo-->
-            <div class="input-group input-group-sm my-5">
-                <label class="input-group-text">Escoge</label>
-                <select id="selector" class="form-select">
-                    <option value="chanchito">chanchitoooo</option>
-                    <option value="aers">aers</option>
-                    <option value="lisa">Lisa Marie Simpson</option>
-                    <option value="bart">Bartholomew J. Simpsons</option>
-                    <option value="maggie">Margaret Simpsons</option>
-                    <option value="marge">Marjorie Jacqueline Simpson</option>
-                    <option value="homer">Homer Jay Simpson</option>
-                </select>
-            </div>
-            <!--esto es para centrarlo-->
-            <div class="text-center">
-            <!--Deforme el svg-->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-50">
-                    <polygon fill="#00FD00" points="50,7.2 93.9,35.4 95,39.9 72.5,61.8 77.8,92.8 50,78.1 22.2,72.8 27.5,61.8 5,39.9 36.1,35.4   " />
-                    <g id="seleccion"></g>
-                </svg>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    const selector = document.getElementById("selector");
-    const seleccion = document.getElementById("seleccion");
-    var seleccionado;
-    selector.onchange = function () {
-        seleccionado = selector.value;
-        console.log(seleccionado);
-        seleccion.innerHTML = '<image style="overflow:visible;" width="100" height="100" xlink:href="cositas/' + seleccionado + '.svg"  transform="matrix(0.5 0 0 0.5 25 25)"></image>';
-    };
-    selector.onchange();
-</script>
-<div class="container">
-  <div class="row">
-    <div class="col-6 mx-auto border">
-      <h1>Construyamos algunas cosas a continuación, con:</h1>
-      <ul id="listado"></ul>
-      <p id="favoritismo">Yo prefiero a: </p>
-      <img src="https://picsum.photos/400/200?random=1" class="rounded mx-auto d-block">
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid g-0">
-  <div class="row g-0">
-    <div class="col g-0">
-            <img src="https://picsum.photos/400/200?random=2" class="w-100 shadow my-2">
-    </div>
-
-  </div>
-
-</div>
-
-        <script>
-            var e = ["Marge Simpson", "Homer Simpson", "Bart Simpson", "Lisa Simpson", "Maggie Simpson", "John Doe", "Kevin Spacey", "Dr. Hannibal Lecter"];
-
-            var f = {
-                mom: "Luann Van Houten",
-                dad: "Kirk Van Houten",
-                child: "Milhouse Van Houten",
-            };
-            var g = {
-                mom: "Marge Simpson",
-                dad: "Homer Simpson",
-                children: ["Bart Simpson", "Lisa Simpson", "Maggie Simpson", "John Doe"],
-            };
-            var h = [
-                {
-                    mom: "Luann",
-                    dad: "Kirk",
-                    children: ["Milhouse"],
-                },
-                {
-                    mom: "Marge",
-                    dad: "Homer",
-                    children: ["Bart", "Lisa", "Maggie"],
-                },
-                {
-                    mom: "Manjula",
-                    dad: "Apu",
-                    children: ["Poonam", "Sashi", "Pria", "Uma", "Anoop", "Sandeep", "Nabendu", "Gheet"],
-                },
-            ];
-
-            e.forEach((x) => {
-
-              if(x == 'John Doe'){
-                document.querySelector("#listado").innerHTML += "<li>" + x + "</li>";
-
-              } else {
-                document.querySelector("#listado").innerHTML += "<li class='text-danger'>" + x + "</li>";
-
-              }
-                document.querySelectorAll("#listado")[0].innerHTML += "<li class='text-danger'>" + x + "</li>";
-            });
-            document.querySelector("#favoritismo").insertAdjacentHTML("beforeend", g.children[3]);
-        </script>
-
-<div class="container-fluid g-0">
-  <div class="row g-0">
-    <div class="col g-0">
-            <img src="https://picsum.photos/400/200?random=2" class="w-100 shadow my-2">
-    </div>
-  </div>
-</div>
-
-<!-- Este es el fin de la sección de prueba -->
-
         <!--ESTE ES EL CONTENIDO PRINCIPAL, ESTÁ DIVIVIDO EN VARIAS SECCIONES-->
         <main class="pb-5">
+
+<!-- TAXONOMÍA Y DISTRIBUCIÓN -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Taxonomía y distribución</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARACTERÍSTICAS FÍSICAS -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Características físicas</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- DESPLAZAMIENTO -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Desplazamiento</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- REPRODUCCIÓN -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Reproducción</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- HERRAMIENTAS -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Uso de Herramientas</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ALIMENTACIÓN -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Uso de Herramientas</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERRITORIO -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Territorio</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AMENAZAS -->
+
+<div class="container border">
+  <div class="row">
+    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+      <h3 class="text-center mt-3 mb-1 border">Amenazas</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+<!--  .......... DESDE AQUÍ PARA ABAJO ES DE FACO .......... -->
 
           <!--SECCIÓN YUXTAPUESTA-->
           <section class="container" id="seccion_yuxtapuesta">
               <div class="row">
                   <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                      <h3 class="text-center mt-5 mb-3">Sección yuxtapuesta</h3>
+                      <h3 class="text-center mt-5 mb-3 border">Sección yuxtapuesta</h3>
                       <div id="yuxtaposicion" class="my-3">
-                          <img src="cositas/beirut-antes.jpg" alt="describa…" />
-                          <img src="cositas/beirut-despues.jpg" alt="describa…" />
+                          <img src="imgs/beirut-antes.jpg" alt="describa…" />
+                          <img src="imgs/beirut-despues.jpg" alt="describa…" />
                       </div>
                       <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
                   </div>
@@ -350,19 +326,19 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="1000">
-                                        <object class="d-block w-100" data="cositas/paso-1.svg" type="image/svg+xml"></object>
+                                        <object class="d-block w-100" data="imgs/paso-1.svg" type="image/svg+xml"></object>
                                         <div class="carousel-caption">
                                             <small>A medida que se mueven su peso deforma las ramas hacia abajo.</small>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="1000">
-                                        <object class="d-block w-100" data="cositas/paso-2.svg" type="image/svg+xml"></object>
+                                        <object class="d-block w-100" data="imgs/paso-2.svg" type="image/svg+xml"></object>
                                         <div class="carousel-caption">
                                             <small>Se ayudan con sus pies prensiles para sostener ramas cercanas y propulsarse</small>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="1000">
-                                        <object class="d-block w-100" data="cositas/paso-3.svg" type="image/svg+xml"></object>
+                                        <object class="d-block w-100" data="imgs/paso-3.svg" type="image/svg+xml"></object>
                                         <div class="carousel-caption">
                                             <small>Distribuyen su peso para formar puentes a los árboles adyacentes</small>
                                         </div>
@@ -385,7 +361,7 @@
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h3 class="text-center mt-5 mb-3">Sección comparativa</h3>
-                        <object data="cositas/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
+                        <object data="imgs/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
                     </div>
                 </div>
@@ -428,20 +404,20 @@
                         <!--ANIMACIÓN CON SVG-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con SVG</h4>
-                        <object class="mx-5" data="cositas/el-movimiento.svg" type="image/svg+xml"></object>
+                        <object class="mx-5" data="imgs/el-movimiento.svg" type="image/svg+xml"></object>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
                         <!--ANIMACIÓN CON SVG y CSS-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con SVG y CSS</h4>
-                        <object class="mx-5" data="cositas/el-grito.svg" type="image/svg+xml"></object>
+                        <object class="mx-5" data="imgs/el-grito.svg" type="image/svg+xml"></object>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
                         <!--ANIMACIÓN CON GIF y CSS-->
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF y CSS</h4>
                         <div class="mb-4 w-100 bg-light overflow-hidden">
-                            <img src="cositas/corre.gif" class="w-50" id="homero" />
+                            <img src="imgs/corre.gif" class="w-50" id="homero" />
                         </div>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
 
@@ -449,7 +425,7 @@
 
                         <h4 class="text-center mt-5 mb-3">Animación con GIF</h4>
                         <div class="text-center pb-4">
-                            <img src="cositas/vuela.gif" class="w-50 mx-auto" />
+                            <img src="imgs/vuela.gif" class="w-50 mx-auto" />
                         </div>
                         <p>Este es un lorem ipsum dolor sit amet, consectetur adipiscing elit. Pero no es un loren ipsum para papel, es para pantalla, donde <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" title="How Users Read on the Web">es recomendable</a> <em>destacar palabras clave</em>, ofrecer <a href="https://www.nngroup.com/videos/plain-language-for-experts/" target="_blank" title="Plain Language For Everyone, Even Experts">una idea por párrafo</a> (que sea clara para <a href="https://www.nngroup.com/videos/biggest-mistake-writing-web/" target="_blank" title="The Biggest Mistake in Writing for the Web">tu público objetivo</a>) y usar el estilo de pirámide invertida (incluyendo en cada pirámide lo que se acaba de <a href="https://youtu.be/iEB3oILm-qQ?t=2063" target="_blank" title="Charla del Dr. Mario García">mostrar o se mostrará</a> a continuación).</p>
                     </div>
